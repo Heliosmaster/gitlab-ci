@@ -5,8 +5,10 @@ module CommitsHelper
     case commit.status
     when 'success'
       'alert-success'
-    when 'failed', 'canceled'
+    when 'failed'
       'alert-danger'
+    when 'canceled'
+      'alert-disabled'
     else
       'alert-warning'
     end
